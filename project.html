@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <div class="startBtn">
+      <button class="register">Register</button>
+      <button class="logIn">Log In</button>
+    </div>
+    <div class="registerForm">
+      <div class="form">
+        <p>Register Form</p>
+        <input type="text" class="name" placeholder="Enter your name" />
+        <input type="text" class="surname" placeholder="Enter your surname" />
+        <input type="date" class="age" placeholder="Enter your date of birth" />
+        <input
+          type="registermail"
+          class="registerEmail"
+          placeholder="Enter your email"
+        />
+        <input
+          type="password"
+          class="registerPassword"
+          placeholder="Enter your password"
+        />
+        <div class="registerFormBtn">
+          <button class="registerBtn">Register</button>
+          <button class="registerBackBtn">Back</button>
+        </div>
+      </div>
+    </div>
+    <div class="logInForm">
+      <div class="form">
+        <p>Log In</p>
+        <input type="email" class="logInEmail" placeholder="Enter your email" />
+        <input
+          type="password"
+          class="logInPassword"
+          placeholder="Enter your password"
+        />
+        <div class="logInFormBtn">
+          <button class="logInBtn">Log In</button>
+          <button class="logInBackBtn">Back</button>
+        </div>
+      </div>
+    </div>
+    <div class="firstGame">
+      <div class="game">
+        <h2 class="title">Click Chicken Game</h2>
+
+        <img src="img/chiken.jpg" id="img1" class="btn" />
+        <audio id="roosterSound" src="sound/ky-ky-ri-ky.mp3"></audio>
+        <div class="stats">
+          <p>Clicks: <span id="counter">0</span></p>
+          <p>Time: <span id="timer">10</span></p>
+        </div>
+      </div>
+    </div>
+    <div id="result" class="result hidden">
+      <p id="resultText"></p>
+
+      <div class="resultButtons">
+        <button id="tryAgain1" class="hidden">Try again!</button>
+        <button id="nextLevel" class="hidden">Next level</button>
+      </div>
+    </div>
+    <div class="secondGame">
+      <div class="game">
+        <h2 class="title">Click Cow Game</h2>
+
+        <img src="img/cow.jpg" id="img2" class="btn" />
+        <audio id="roosterSound2" src="sound/my-my-my.mp3"></audio>
+        <div class="starts">
+          <p>Clicks: <span id="seconCounter">0</span></p>
+          <p>Time: <span id="secondTimer">10</span></p>
+        </div>
+      </div>
+    </div>
+    <div id="secondResult" class="result hidden">
+      <p id="secondResultText"></p>
+
+      <div class="resultButtons">
+        <button id="restartGame2" class="hidden">Restart Game</button>
+
+        <button id="watchVideo" class="hidden">Watch Video</button>
+      </div>
+    </div>
+    <div class="videoContainer hidden" id="videoContainer">
+      <video class="danceVideo" controls autoplay>
+        <source src="video/dance-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <script src="js/register-form.js"></script>
+    <script src="js/first-game.js"></script>
+    <script src="js/second-game.js"></script>
+  </body>
+</html>
